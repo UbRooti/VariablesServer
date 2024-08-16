@@ -117,7 +117,7 @@ Response:
 
 If an authentication token is set in the config.json file, all requests must include the token as a URL parameter:
 ```http
-?auth_token=<your_auth_token>
+/?auth_token=<your_auth_token>
 ```
 Or server will return `no_access`
 
