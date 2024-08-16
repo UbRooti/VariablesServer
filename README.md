@@ -21,8 +21,8 @@ sudo apt install git cmake libasio-dev build-essential
 The server is now only available on linux because it has been prepared for use with Raspberry Pi
 ### Linux:
 ```bash
-git clone https://google.com/
-cd asd
+git clone https://github.com/UbRooti/VariablesServer
+cd VariablesServer
 chmod +x build.sh
 ./build.sh
 ```
