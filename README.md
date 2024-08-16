@@ -114,7 +114,12 @@ Response:
 ### Authentication
 
 If an authentication token is set in the config.json file, all requests must include the token as a URL parameter:
-
+```http
 ?auth_token=<your_auth_token>
+<<<<<<< HEAD
 
 If no token is set, the server will allow anonymous access.
+=======
+```
+If no token is set, the server will allow anonymous access.
+>>>>>>> 931e37b (Updated mistakes in README.md)
