@@ -27,6 +27,8 @@ chmod +x build.sh
 ./build.sh
 ```
 
+After compiling the server, an executable file should appear in the `bin/` directory.
+
 ## Configuration
 
 Before running the server, you may want to configure it. The server uses a configuration file (`config.json`) located in the `res/` directory by default. The configuration file allows you to set the server port and authentication token.
