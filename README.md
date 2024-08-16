@@ -119,4 +119,6 @@ If an authentication token is set in the config.json file, all requests must inc
 ```http
 ?auth_token=<your_auth_token>
 ```
+Or server will return `no_access`
+
 If no token is set, the server will allow anonymous access.
