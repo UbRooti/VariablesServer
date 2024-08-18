@@ -4,6 +4,8 @@
 
 This project is a simple HTTP server built with C++ using the Crow framework. It allows users to manage a set of variables stored as JSON objects. The server provides a RESTful API to get, set, delete, and list these variables. It also includes a basic configuration management system.
 
+Used libraries: [JSON](https://github.com/nlohmann/json), [CROW](https://github.com/CrowCpp/Crow).
+
 ## Why Choose This Project
 
 - **Lightweight:** The server is built with minimal dependencies, making it lightweight and efficient.
@@ -33,7 +35,7 @@ After compiling the server, an executable file should appear in the `bin/` direc
 
 Before running the server, you may want to configure it. The server uses a configuration file (`config.json`) located in the `res/` directory by default. The configuration file allows you to set the server port and authentication token.
 
-## Example `config.json`
+### Example `config.json`
 
 ```json
 {
@@ -57,7 +59,7 @@ To run the server, simply execute the compiled binary. The server will start on 
 
     ./server
 
-RESTful API Endpoints
+## RESTful API Endpoints
 
 ### 1. Get a Variable
 
@@ -117,7 +119,7 @@ Response:
 
 If an authentication token is set in the config.json file, all requests must include the token as a URL parameter:
 ```http
-/?auth_token=<your_auth_token>
+GET /?auth_token=<your_auth_token>
 ```
 Or server will return `no_access`
 
